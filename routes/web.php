@@ -41,11 +41,8 @@ Route:: get('/about',function(){
                 
                 });
             
- Route:: get('/contact',function(){
+ Route::get('/contact', [ProjectController::class, 'contact'])->name('contact');
 
-                    return view('layout.contact');
-                    
-                    });
                 
 Route:: get('/single_product',function(){
 
@@ -63,17 +60,12 @@ Route:: get('/about',function(){
     });
 
 
-
-
-   
-    
     Route::get('/uploadfile', 'App\Http\Controllers\UploadfileController@index');
     Route::post('/uploadfile', 'App\Http\Controllers\UploadfileController@upload');
     Route::get('/main', 'App\Http\Controllers\MainController@index');
     Route::post('/main/checklogin', 'App\Http\Controllers\MainController@checklogin');
     Route::get('main/successlogin', 'App\Http\Controllers\MainController@successlogin');
     Route::get('main/logout', 'App\Http\Controllers\MainController@logout');
-
 
 
 
@@ -109,3 +101,4 @@ Route:: get('/edit_product_quantity', function(){
 
 
 Route::post('/checkout', [CartController::class, 'checkout' ])-> name('checkout');
+Route::post('/submit-contact', [ProjectController::class, 'submitContact'])->name('contact.submit');
