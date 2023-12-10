@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cakery - The Best Bakery</title>
+    <title>FUDGE - The Best Bakery</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -26,8 +26,8 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body> 
-     <!--    Navbar Start-->
+<body>
+    <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="home" class="navbar-brand px-lg-4 m-0">
@@ -45,101 +45,84 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu text-capitalize">
-                            <a href="reservation" class="dropdown-item">Reservation</a>
-                            <a href="testimonial" class="dropdown-item active">Testimonial</a>
+                            <a href="reservation.html" class="dropdown-item">Reservation</a>
+                            <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
                         </div>
                     </div>
                     <a href="contact" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
         </nav>
-    </div> 
+    </div>
     <!-- Navbar End -->
-     
-
-
 
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Login</h1>
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Testimonial</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Login</p>
+                <p class="m-0 text-white">Testimonial</p>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-   <!-- Login Code Start Z -->
-
-   <!-- <!DOCTYPE html>
-<html>
- <head>
-  <title>LOGIN</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-   .box{
-    width:600px;
-    margin:0 auto;
-    border:1px solid #ccc;
-   } -->
-  </style>
- </head>
- <body>
-  <br />
-  <div class="container box">
-   <h3 align="center"> Login To Your Account</h3><br />
-
-   @if(isset(Auth::user()->email))
-    <script>window.location="/main/successlogin";</script>
-   @endif
-
-   @if ($message = Session::get('error'))
-   <div class="alert alert-danger alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>{{ $message }}</strong>
-   </div>
-   @endif
-
-   @if (count($errors) > 0)
-    <div class="alert alert-danger">
-     <ul>
-     @foreach($errors->all() as $error)
-      <li>{{ $error }}</li>
-     @endforeach
-     </ul>
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                <h1 class="display-4">Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Client Name</h4>
+                            <i>Profession</i>
+                        </div>
+                    </div>
+                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Client Name</h4>
+                            <i>Profession</i>
+                        </div>
+                    </div>
+                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Client Name</h4>
+                            <i>Profession</i>
+                        </div>
+                    </div>
+                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Client Name</h4>
+                            <i>Profession</i>
+                        </div>
+                    </div>
+                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+            </div>
+        </div>
     </div>
-   @endif
-
-   <form method="post" action="{{ url('/main/checklogin') }}">
-    {{ csrf_field() }}
-    <div class="form-group">
-     <label>Enter Email</label>
-     <input type="email" name="email" class="form-control" />
-    </div>
-    <div class="form-group">
-     <label>Enter Password</label>
-     <input type="password" name="password" class="form-control" />
-    </div>
-    <div class="form-group">
-     <input type="submit" name="login" class="btn btn-primary" value="Login" />
-    </div>
-   </form>
-  </div>
- </body>
-</html>
-
-
-
-
-   <!-- Login Code Ends  Z -->
-
+    <!-- Testimonial End -->
 
 
     <!-- Footer Start -->
